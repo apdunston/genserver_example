@@ -8,7 +8,7 @@ defmodule MyModule do
     - my_var: a variable
   """
   defmodule State do
-    defstruct my_var: nil
+    defstruct [:my_var]
   end
 
   ############################

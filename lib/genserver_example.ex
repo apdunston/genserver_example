@@ -1,4 +1,4 @@
-defmodule MyModule do
+defmodule GenserverExample do
   @moduledoc """
   """
   use GenServer

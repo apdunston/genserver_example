@@ -10,6 +10,16 @@ defmodule ParentTeen do
   If the baby takes > 5 sec, then the call from parent to teen will time out.
   But this provides a way for the teen to stop executing the handle_call while
   it's waiting for the baby to buzz in.
+
+  ```
+  iex(1)> ParentTeen.go
+  Goo goo?
+  Is the baby okay?
+  Tell you in a minute.
+  Gah gah :)
+  Yes, the baby's fine.
+  :ok
+  ```
   """
 
   def go do

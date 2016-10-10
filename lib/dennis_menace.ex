@@ -1,4 +1,28 @@
 defmodule DennisMenace do
+  @moduledoc """
+  Once you introduce Dennis and Mr. Wilson and tell Dennis to go play, they'll
+  go back and forth forever.
+
+  If you send Ruff in to drag Dennis away, he'll finally stop.
+
+  ```
+  iex(1)>  DennisMenace.go
+  Mr. Wilson, this is Dennis.
+  How do you do?
+  Dennis, this is Mr. Wilson.
+  Hi there!
+  Oh Mr. Wilson!
+  Go away!
+  Oh Mr. Wilson!
+  Go away!
+  Oh Mr. Wilson!
+  Go away!
+  ...
+  Put me down Ruff!
+  :ok
+  ```
+  
+  """
 
   def go do
     {:ok, wilson} = GenServer.start_link(MrWilson, :ok)
